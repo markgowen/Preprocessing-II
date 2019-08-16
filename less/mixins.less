@@ -1,1 +1,20 @@
 // Mixins in here
+@mobile: ~'(max-width: 500px)';
+@tablet: ~'(max-width: 800px)';
+@desktop: ~'(max-width: 1500px)';
+
+.flex(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.btn(@bg-color, @color, @width) {
+    background-color: @bg-color;
+    color: @color;
+    width: @width;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    .flex(center, center);
+    padding: 4%;
+}//closes btn

@@ -1,0 +1,14 @@
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  border-bottom: 1px dashed lightgray;
+}
+nav .logo {
+  align-content: flex-start;
+}
+nav .navLinks {
+  align-items: center;
+  text-decoration: none;
+}
